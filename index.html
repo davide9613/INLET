@@ -11,14 +11,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            gap: 20px; /* Add consistent spacing */
             height: 100vh;
+            padding: 10px; /* Prevent content from touching edges */
+            box-sizing: border-box; /* Include padding in dimensions */
         }
         .button {
-            width: 100px;
-            height: 100px;
+            width: 80px; /* Reduced size for mobile */
+            height: 80px;
             border-radius: 50%;
             border: none;
-            margin: 20px;
             cursor: pointer;
             font-size: 0; /* Hide button text */
         }
