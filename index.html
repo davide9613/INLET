@@ -11,24 +11,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Ensure proper height on mobile */
-            padding: 20px; /* Avoid content touching edges */
-            box-sizing: border-box;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap; /* Allow items to wrap */
-            justify-content: center; /* Center items horizontally */
-            gap: 20px; /* Add space between buttons */
-            max-width: 100%; /* Prevent overflow */
+            height: 100vh;
         }
         .button {
-            width: 20vw; /* Scale buttons dynamically */
-            height: 20vw; /* Make them square */
-            max-width: 100px; /* Limit size on larger screens */
-            max-height: 100px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             border: none;
+            margin: 20px;
             cursor: pointer;
             font-size: 0; /* Hide button text */
         }
@@ -52,11 +42,9 @@
         }
     </script>
 
-    <div class="container">
-        <button class="button white" onclick="window.open('https://x.com/i/lists/1857846091691204725', '_blank')"></button>
-        <button class="button purple" onclick="openMultipleTabs()"></button>
-        <button class="button yellow" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')"></button>
-    </div>
+    <button class="button white" onclick="window.open('https://x.com/i/lists/1857846091691204725', '_blank')"></button>
+    <button class="button purple" onclick="openMultipleTabs()"></button>
+    <button class="button yellow" onclick="window.open('https://www.youtube.com/watch?v=RHQDHzocdDs', '_blank')"></button>
 
 </body>
 </html>
