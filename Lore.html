@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lore</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #282a36;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .button {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: none;
+            margin: 20px;
+            cursor: pointer;
+            font-size: 0; /* Hide button text */
+        }
+        .white {
+            background-color: #f8f8f3;
+        }
+        .yellow {
+            background-color: #f1fa8c;
+        }
+        .purple {
+            background-color: #bc93f9;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        function openMultipleTabs() {
+            window.open('https://www.youtube.com/@duncantrussellfamilyhour/videos?view=0&sort=dd&shelf_id=0', '_blank');
+            window.open('https://music.youtube.com/playlist?list=PL22J3VaeABQAbEeT04p5VmAOBmqw2kmxj', '_blank');
+        }
+    </script>
+
+    <button class="button white" onclick="window.open('https://x.com/i/lists/1857846091691204725', '_blank')"></button>
+    <button class="button purple" onclick="openMultipleTabs()"></button>
+    <button class="button yellow" onclick="window.open('https://www.youtube.com/watch?v=RHQDHzocdDs', '_blank')"></button>
+
+</body>
+</html>
