@@ -39,32 +39,24 @@
 <body>
 
     <script>
-    function openMultipleTabs() {
-        const urls = [
-            'https://www.youtube.com/@Adiyogi1008/videos',
-            'https://www.youtube.com/@duncantrussellfamilyhour/videos?view=0&sort=dd&shelf_id=0',
-            'https://www.youtube.com/@TheoVon/videos',
-            'https://www.youtube.com/@TimDillonShow/videos',
-            'https://rumble.com/c/russellbrand/videos',
-            'https://www.youtube.com/@JonathanPageau/videos?view=0&sort=dd&shelf_id=0',
-            'https://www.youtube.com/@JordanBPeterson/videos',
-            'https://www.youtube.com/@joerogan/videos',
-            'https://www.youtube.com/@lexfridman/videos',
-            'https://www.youtube.com/@hubermanlab/videos'
-        ];
+        function openMultipleTabs() {
 
-        let i = 0;
-        function openNext() {
-            if (i < urls.length) {
-                window.open(urls[i], '_blank');
-                i++;
-                setTimeout(openNext, 1000); // 1 second delay between tabs
-            }
+            window.open('https://www.youtube.com/@Adiyogi1008/videos', '_blank');
+            window.open('https://www.youtube.com/@duncantrussellfamilyhour/videos?view=0&sort=dd&shelf_id=0', '_blank');
+            
+            window.open('https://www.youtube.com/@TheoVon/videos', '_blank');
+            window.open('https://www.youtube.com/@TimDillonShow/videos', '_blank');
+            window.open('https://rumble.com/c/russellbrand/videos', '_blank');
+            
+            window.open('https://www.youtube.com/@JonathanPageau/videos?view=0&sort=dd&shelf_id=0', '_blank');
+            window.open('https://www.youtube.com/@JordanBPeterson/videos', '_blank');
+            
+            window.open('https://www.youtube.com/@joerogan/videos', '_blank');
+            window.open('https://www.youtube.com/@lexfridman/videos', '_blank');
+            window.open('https://www.youtube.com/@hubermanlab/videos', '_blank');
+            
         }
-
-        openNext(); // Start the chain
-    }
-</script>
+    </script>
     <!--
     commenting out the short-form content button for now
     <button class="button white" onclick="window.open('https://www.youtube.com/feed/subscriptions/shorts', '_blank')"></button>
